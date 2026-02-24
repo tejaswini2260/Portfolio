@@ -1,0 +1,183 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI';
+}
+
+body {
+    background: linear-gradient(135deg, #eef2ff, #f9fafb);
+    color: #333;
+}
+
+/* Dark Mode */
+.dark {
+    background: #0f172a;
+    color: #fff;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background: rgba(255,255,255,0.6);
+    backdrop-filter: blur(10px);
+    position: sticky;
+    top: 0;
+}
+
+.nav-links {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Sections */
+.section {
+    padding: 80px 20px;
+    text-align: center;
+}
+
+/* Glass Effect */
+.glass {
+    background: rgba(255,255,255,0.4);
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+    margin: 20px;
+}
+
+/* Buttons */
+.btn {
+    padding: 10px 20px;
+    background: #6366f1;
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+    margin: 10px;
+}
+
+.btn.outline {
+    background: transparent;
+    border: 2px solid #6366f1;
+    color: #6366f1;
+}
+
+/* Filters */
+.filters {
+    margin-bottom: 20px;
+}
+
+.filters button {
+    padding: 8px 15px;
+    margin: 5px;
+    border: none;
+    background: #6366f1;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Projects */
+.project-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.project-card {
+    width: 250px;
+    padding: 20px;
+    border-radius: 15px;
+    background: rgba(255,255,255,0.5);
+    backdrop-filter: blur(8px);
+    transition: 0.4s;
+    cursor: pointer;
+}
+
+/* Hover Animation */
+.project-card:hover {
+    transform: translateY(-10px) scale(1.03);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+/* ===== MOVING GRADIENT BACKGROUND ===== */
+body {
+    background: linear-gradient(-45deg, #7c3aed, #4f46e5, #ec4899, #9333ea);
+    background-size: 400% 400%;
+    animation: gradientMove 10s ease infinite;
+}
+
+@keyframes gradientMove {
+    0% { background-position: 0% }
+    50% { background-position: 100% }
+    100% { background-position: 0% }
+}
+
+/* ===== TYPING TEXT ===== */
+.typing {
+    font-size: 1.5rem;
+    margin-top: 10px;
+    color: #fbcfe8;
+}
+
+/* ===== PARTICLES ===== */
+#particles-js {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+/* ===== MODAL ===== */
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.6);
+}
+
+.modal-content {
+    background: white;
+    color: black;
+    margin: 15% auto;
+    padding: 20px;
+    width: 300px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.close {
+    float: right;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+/* Contact */
+form {
+    width: 300px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+input, textarea {
+    margin: 10px 0;
+    padding: 10px;
+}
+
+/* Responsive */
+@media(max-width:768px) {
+    .nav-links {
+        display: none;
+    }
+}
